@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="splide/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ft Fund</title>
+</head>
+<body>
+    <div class="page-loading">
+        <div class="loading-item">
+            <img src="img/elipsa_2_slider_for_woman.svg" alt="elipsa">
+        </div>
+    </div>
+    <header>
+        <nav class="nav-bar-desktop main-container">
+                <img src="img/LOGO.svg" alt="Logo ft fund" loading="lazy" width="131px" height="62px">
+                <div class="second-items-menu">
+                    <ul class="menu-items-list">
+                        <li class="menu-item-drop item-desktop OPEN-BTN">Pożyczki finansowe<img class="arrow-menu" src="img/arrow_down_menu.svg" alt="strzałka w dół" loading="lazy" width="14px" height="8px">
+                            <ul class="menu-dropdown-top">
+                                <li class="drop-down-item-desktop"><a href="">Pożyczka pod zastaw mieszkania</a></li>
+                                <li class="drop-down-item-desktop"><a href="">Pożyczka pod zastaw domu</a></li>
+                                <li class="drop-down-item-desktop"><a href="">Pożyczka pod zastaw lokalu usługowego</a></li>
+                                <li class="drop-down-item-desktop"><a href="">Pożyczka pod zastaw zmieni budowalnej</a></li>
+                                <li class="drop-down-item-desktop"><a href="">Pożyczka pomostowa i inwestycyjna</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="blog.html">Blog</a></li>
+                        <li class="menu-item"><a href="#app-form">Kontakt</a></li>
+                    </ul>
+                    <span class="menu-border"></span>
+                    <a href="tel:534923173" class="phone-menu"><img class="phone-icon-menu" src="img/phone_icon_menu.svg" alt="phone icon" loading="lazy" width="18px" height="18px">534 923 173</a>
+                    <button class="btn button-menu">Złóż wniosek o pożyczkę</button>
+                </div>
+        </nav>
+        <nav class="nav-bar-moblie">
+            <div class="mobile-menu-container">
+                <img src="img/LOGO.svg" alt="Logo ft fund" loading="lazy" width="131px" height="62px">
+                <div class="menu-icon toggler">
+                    <button class="hamburger-menu">
+                        <span class="hamburger-bars"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-mobile">
+               <div class="scroll-wrapper">
+                    <ul class="menu-items-list">
+                        <li class="menu-item item-moblie OPEN-BTN">Pożyczki finansowe<img class="arrow-menu-mobile" src="img/arrow_down_mobile.svg" alt="strzałka w dół" loading="lazy" width="14px" height="8px"></li>
+                                <ul class="dropdown-menu">
+                                    <li class="item-dropdown-menu">Pożyczka pod zastaw mieszkania</li>
+                                    <li class="item-dropdown-menu">Pożyczka pod zastaw domu</li>
+                                    <li class="item-dropdown-menu">Pożyczka pod zastaw lokalu usługowego</li>
+                                    <li class="item-dropdown-menu">Pożyczka pod zastaw zmieni budowalnej</li>
+                                    <li class="item-dropdown-menu">Pożyczka pomostowa i inwestycyjna</li>
+                                </ul>
+                        <li class="menu-item">Blog</li>
+                        <li class="menu-item">Kontakt</li>
+                    </ul>
+                    <div class="border-mobile"></div>
+                    <a href="#" class="phone-menu"><img class="phone-icon-menu" src="img/phone_icon_mobile.svg" alt="phone icon" loading="lazy" width="18px" height="18px">534 923 173</a>
+                    <div class="button-container-menu"><button class="btn button-menu">Złóż wniosek o pożyczkę</button></div>
+               </div>
+            </div>
+    </header>
+<main>
+    <section id="popup" class="popup-section" style="display: none;">
+        <div class="bg-popup"></div>
+        <div class="popup-container">
+            <div id="close-popup"><img src="img/close-button.svg" alt="popup przycisk zamknięcia" loading="lazy" width="18px" height="18px"></div>
+            <img class="pop-up-elipse" src="img/elipse_work_section.svg" alt="popup elipsa" loading="lazy" width="46px" height="46px">
+            <p>Brawo!<br>Jesteś o krok bliżej do wolności finansowej!</p>
+        </div>
+    </section>
+    <section id="home" class="home-section">
+        <div class="main-container home-container">
+            <div class="home-text-container">
+                <h1 class="change-text home-text--active">Pożyczki gotówkowe <span>bez BIK</span> pod zastaw nieruchomości</h1>
+                <h2 class="change-text"><span>Nie jesteś</span> zobowiązany do skorzystania z oferty pożyczkowej</h2>
+                <div class="home-button-container">
+                    <button class="btn">Zadzwoń do nas</button>
+                    <button class="btn">Złóż wniosek o pożyczkę <img class="arrow-home-button" src="img/arrow_right_home.svg" alt="strzałka w prawo" loading="lazy" width="16px" height="16px"></button>
+                </div>
+                <div class="home-pagination-container">
+                    <div class="home-pag slide1"><img class="dot dot--active" src="img/seconds_circle_pagination.svg" alt="przycisk zmiany na pierwszy slajd" loading="lazy"></div>
+                    <div class="second-pag home-pag slide2"><img class="dot" src="img/seconds_circle_pagination.svg" alt="przycisk zmiany na drugi slajd" loading="lazy"></div>
+                </div>
+            </div>
+            <div class="circle-photo">
+                <img class="circle circle-rotation" src="img/CIRCLE_first_slide.svg" alt="koło obrotowe" width="757px" height="757px">
+                <img id="change-image" class="circle photo-inside images--circle active-images" src="img/first_slide_men_photo.png" alt="zdjęcie mężczyzny" width="758px" height="758px">
+                <img class="circle photo-inside images--circle" src="img/second_slide_photo_woman.png" alt="zdjęcie kobiety" width="758px" height="758px">
+                <img class="elipse-under-photo home-elipse--active" src="img/elipsa_1_slider_for_man.svg" alt="elipsa" width="44px" height="45px">
+                <img class="elipse-under-photo" src="img/elipsa_2_slider_for_woman.svg" alt="elipsa" loading="lazy" width="44px" height="45px">
+            </div>
+        </div>
+    </section>
+    <section id="loans" class="loans-section">
+        <div class="main-container">
+            <div class="loans-title">
+                <h3>Pożyczki pozabankowe</h3>
+                <h1>Pożyczki pod zastaw nieruchomości</h1>
+            </div>
+            <div class="squares-container">
+                <div class="square-box">
+                    <div class="square-items-container">
+                        <div class="square_image"><img src="img/apartment.svg" alt="ikona apartamentu" loading="lazy" width="48px" height="48px"></div>
+                        <h2>Pożyczka pod zastaw mieszkania</h2>
+                        <button>Sprawdź ofertę<span></span></button>
+                    </div>
+                </div>
+                <div class="square-box">
+                    <div class="square-items-container">
+                        <div class="square_image"><img src="img/home.svg" alt="ikona domu" loading="lazy" width="48px" height="48px"></div>
+                        <h2>Pożyczka pod zastaw domu</h2>
+                        <button>Sprawdź ofertę<span></span></button>
+                    </div>
+                </div>
+                <div class="square-box">
+                    <div class="square-items-container">
+                        <div class="square_image"><img src="img/shop.svg" alt="ikona sklepu" loading="lazy" width="48px" height="48px"></div>
+                        <h2>Pożyczka pod zastaw lokalu usługowego</h2>
+                        <button>Sprawdź ofertę<span></span></button>
+                    </div>
+                </div>
+                <div class="square-box">
+                    <div class="square-items-container">
+                        <div class="square_image"><img src="img/land.svg" alt="ikona natury" loading="lazy" width="48px" height="48px"></div>
+                        <h2>Pożyczka pod zastaw ziemi budowlanej</h2>
+                        <button>Sprawdź ofertę<span></span></button>
+                    </div>
+                </div>
+                <div class="square-box">
+                    <div class="square-items-container">
+                        <div class="square_image"><img src="img/handshake.svg" alt="ikona podania dłoni" loading="lazy" width="48px" height="48px"></div>
+                        <h2>Pożyczki pomostowe i inwestycyjne</h2>
+                        <button>Sprawdź ofertę<span></span></button>
+                    </div>
+                </div>
+                <div class="loans-elipse"><img src="img/loans_elipse_section.svg" alt="elipsa" loading="lazy" width="48px" height="48px"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="main-container">
+            <div class="about-title">
+                <h3>Kim jesteśmy</h3>
+                <h1>Pomagamy w uwalnianiu się od problemów finansowych</h1>
+            </div>
+            <div class="about-items-container">
+                <div class="about-items-description">
+                    <h3>Kim jesteśmy</h3>
+                    <h2>Krótki headline ze słowem kluczowym</h2>
+                    <p>Powiedz nam, co Cię trapi, a dopasujemy do Twojej sytuacji najlepsze możliwe rozwiązanie. Jeśli posiadasz tzw. „trudną nieruchomość”
+                        i chcesz ją sprzedać – świetnie trafiłeś. A może chcesz wziąć pożyczkę
+                        pod zastaw swoich czterech kątów? W tym także Cię wesprzemy. 
+                        Witamy w ekipie od zadań specjalnych.</p>
+                    <div class="about-button-container">
+                        <button class="btn">Złóż wniosek o pożyczkę</button>
+                        <button class="btn">Zadzwoń do nas <img class="about-button-arrow" src="img/square_box_arrow_right.svg" alt="strzałka w prawo" loading="lazy" width="16px" height="16px"></button>
+                    </div>
+                </div>
+                <div class="about-items-images">
+                    <img class="image-responsive" src="img/about_photography.png" alt="zdjęcie kobiety i mężczyzny" loading="lazy" width="1220px" height="1352px">
+                    <img src="img/about_rectangle.svg" alt="prostokąt za zdjęciem" loading="lazy" width="319px" height="342px">
+                    <img class="about-mobile-image image-responsive" src="img/about_photography_for_mobile.png" alt="zdjęcie kobiety i mężczyzny" loading="lazy" width="344px" height="220px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work-section">
+        <div class="half-elipse"><img src="img/half_elipse_work.svg" alt="elipsa" loading="lazy"></div>
+        <div class="main-container">
+           <div class="work-title">
+                <h3>Jak wygląda współpraca z nami</h3>
+                <h1>Kroki procesu pożyczkowego</h1>
+           </div>
+            <div class="items-work-container-first">
+                <div class="container-image-work-first">
+                    <img class="work-photo image-responsive desktop-image-work" src="img/foto_01_work_section.png" alt="Zdjęcie mężczyzny" width="610px" height="676px" loading="lazy">
+                    <img class="work-photo image-responsive mobile-image-work" src="img/foto_01_work_section_mobile.png" alt="Zdjęcie mężczyzny" width="610px" height="676px" loading="lazy">
+                </div>
+                <div class="text-container-work text-work-first">
+                    <h3>Krok 1</h3>
+                    <h2>Kontakt z nami i rozmowa z doradcą</h2>
+                    <p>Pożyczka pod zastaw jest rozwiązaniem dla osób, które pragną elastycznego finansowania, 
+                        nie mogą otrzymać kredytu w banku lub oczekują szybkiego finansowania, z pominięciem wielu procedur bankowych.</p>
+                    <div class="first-checkmark-work">
+                        <img src="img/check-vector.svg" alt="znak wyboru" loading="lazy">
+                        <p>Prosty do wypełniania formularz</p>
+                    </div>
+                    <div class="second-checkmark-work">
+                        <img src="img/check-vector.svg" alt="znak wyboru" loading="lazy">
+                        <p>Darmowa konsultacja telefoniczna</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items-work-container-second">
+                <div class="container-image-work">
+                    <img class="work-photo image-responsive desktop-image-work" src="img/foto_02_work_section.png" alt="zdjęcie domu" width="610px" height="676px" loading="lazy">
+                    <img class="work-photo image-responsive mobile-image-work" src="img/foto_02_work_section_mobile.png" alt="zdjęcie domu" width="610px" height="676px" loading="lazy">
+                </div>
+                <div class="text-container-work">
+                    <h3>Krok 2</h3>
+                    <h2>Wycena nieruchomości przez rzeczoznawcę</h2>
+                    <p>Pożyczka pod zastaw jest rozwiązaniem dla osób, które pragną elastycznego finansowania, nie mogą otrzymać kredytu w banku lub 
+                        oczekują szybkiego finansowania, z pominięciem wielu procedur bankowych.</p>
+                    <div class="first-checkmark-work">
+                        <img src="img/check-vector.svg" alt="znak wyboru" loading="lazy">
+                        <p>Nie płacisz żadnej wstępnej opłaty wstępnej</p>
+                    </div>
+                    <div class="second-checkmark-work">
+                        <img src="img/check-vector.svg" alt="znak wyboru" loading="lazy">
+                        <p>Nie jesteś zobowiązany do skorzystania z oferty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items-work-container-three">
+                <div class="container-image-work">
+                    <img class="work-photo image-responsive desktop-image-work" src="img/foto_03_work_Section.png" alt="zdjęcie kobiety" width="610px" height="676px" loading="lazy">
+                    <img class="work-photo image-responsive mobile-image-work" src="img/foto_03_work_section_mobile.png" alt="zdjęcie kobiety" width="610px" height="676px" loading="lazy">
+                </div>
+                
+                <div class="text-container-work">
+                    <h3>Krok 3</h3>
+                    <h2>Podpisanie umowy w Kancelari Notarialnej i wypłata</h2>
+                    <p>Pożyczka pod zastaw jest rozwiązaniem dla osób, które pragną elastycznego finansowania, nie mogą otrzymać kredytu w 
+                        banku lub oczekują szybkiego finansowania, z pominięciem wielu procedur bankowych.</p>
+                    <div class="first-checkmark-work">
+                        <img src="img/check-vector.svg" alt="znak wyboru" loading="lazy">
+                        <p>Umowa pożyczki podpisana w kancelarii notarialnej</p>
+                    </div>
+                    <div class="second-checkmark-work">
+                        <img src="img/check-vector.svg" alt="znak wyboru" loading="lazy">
+                        <p>Bezpieczna transakcja u Notariusza</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-bg">
+                <div class="elipse-container-work">
+                    <img class="image-responsive" src="img/elipse_work_section.svg" alt="elipsa" loading="lazy">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="conditions" class="conditions-section">
+        <div class="main-container">
+            <div class="items-conditions-container">
+                <div class="conditions-title">
+                    <h3>Warunki spłaty</h3>
+                    <h1>Dogodne warunki spłaty pożyczki</h1>
+                </div>
+                <div class="conditions-description">
+                    <p>Pożyczka może być udzielona na okres od 3 - 60 miesięcy. Przy czym jest możliwość 
+                        zastosowania w niektórych przypadkach dłuższego terminu. Warunki spłaty mogą być dostosowane do potrzeb a także propozycji pożyczkobiorcy.</p>
+                    <p>Możliwa jest więc zarówno spłata w miesięcznych ratach (odsetki + kapitał lub same odsetki a kapitał na koniec) jak również spłata całości na koniec 
+                        okresu umowy. Finasowanie może być również uruchamiane w transzach.</p>
+                    <p>Rozwiązanie charakteryzuje się nie tylko elastycznymi warunki spłaty ale również atrakcyjnymi i konkurencyjnymi warunkami finansowymi. Proszę 
+                        jednak pamiętać, że pożyczki pozabankowe będą droższe w stosunku do pożyczek bankowych.</p>
+                </div>
+            </div>
+            <div class="retangle-conditions">
+                <img src="img/elipse_work_section.svg" alt="elipsa" loading="lazy" width="46px" height="46px">
+                <img src="img/elipsa_2_slider_for_woman.svg" alt="elipsa" loading="lazy" width="45px" height="44px">
+                <h2>Jesteś zainteresowany naszą ofertą i chcesz porozmawiać o możliwości współpracy?</h2>
+                <button class="btn">Złóż wniosek o pożyczkę</button>
+            </div>
+            </div>
+    </section>
+    <section id="overline" class="splide overline-section">
+        <div class="main-container">
+            <div class="overline-title">
+                <h3>Overline</h3>
+                <h1>Krótki headline ze słowem</h1>
+            </div>
+           <div class="splide__track">
+               <div class="splide__list">
+                    <div class="overline-items-container splide__slide">                      
+                            <div class="overline-circle-item first-overline">
+                                <div class="overline-text-container">
+                                    <p>12 lat</p>
+                                    <p>Rozwiązujemy problemy naszych klientów</p>
+                                </div>
+                                <div class="bg-elipse-overline"><img src="img/elipse_work_section.svg" alt="elipsa" loading="lazy" width="28px" height="28px"></div>
+                            </div>                                  
+                            <div class="overline-circle-item">
+                                <div class="overline-text-container">
+                                    <p>Numer #1</p>
+                                    <p>Numer jeden w Polsce w branży pożyczkowej</p>
+                                </div>
+                                <div class="bg-elipse-overline"><img src="img/elipse_work_section.svg" alt="elipsa" loading="lazy" width="28px" height="28px"></div>
+                            </div>                                             
+                            <div class="overline-circle-item">
+                                <div class="overline-text-container">
+                                    <p>Ponad 1400</p>
+                                    <p>Tylu Klientów powierzyło nam swoje finanse</p>
+                                </div>
+                                <div class="bg-elipse-overline"><img src="img/elipse_work_section.svg" alt="elipsa" loading="lazy" width="28px" height="28px"></div>
+                            </div>                      
+                            <div class="overline-circle-item">
+                                <div class="overline-text-container">
+                                    <p>12 lat</p>
+                                    <p>Rozwiązujemy problemy naszych klientów</p>
+                                </div>
+                                <div class="bg-elipse-overline"><img src="img/elipse_work_section.svg" alt="elipsa" loading="lazy" width="28px" height="28px"></div>
+                            </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <section id="opinions" class="opinions-section splide">
+        <div class="main-container">
+            <div class="header-opinions-container">
+                <div class="opinions-title">
+                    <h3>Opinie o nas</h3>
+                    <h1>Poznaj opinie naszych Klientów</h1>
+                </div>
+                <div class="opinions-arrows-container splide__arrows">
+                    <button class="opinions-arrow splide__arrow--prev"><span class="arrow-left-opinions"></span></button>
+                    <button class="opinions-arrow splide__arrow--next"><span class="arrow-right-opinions"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="opinions-container">
+            <div class="clients-opinion-container splide__track">
+                <div class="splide__list">
+                    <li class="splide__slide">
+                        <article class="client-opinion">
+                            <img src="img/quote_vector.svg" alt="ikona cytatu" loading="lazy" width="36px" height="26px">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Id velit eget tempus donec blandit rutrum habitasses. 
+                                Nibh donec mollis cursus nunc. Tortor, velit, magna nec porttitor. Ipsum commodo nunc, in quam risus, loremu condimentum adipiscing diam etiam.</p>
+                            <div class="opinion-author">
+                                <p>Filip Tyński</p>
+                                <p>Pracownik fizyczny</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="splide__slide">
+                        <article class="client-opinion">
+                            <img src="img/quote_vector.svg" alt="ikona cytatu" loading="lazy" width="36px" height="26px">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Id velit eget tempus donec blandit rutrum habitasses. 
+                                Nibh donec mollis cursus nunc. Tortor, velit, magna nec porttitor. Ipsum commodo nunc, in quam risus, loremu condimentum adipiscing diam etiam.</p>
+                            <div class="opinion-author">
+                                <p>Marzena Nowicka</p>
+                                <p>Dyrektor w firmie Budma</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="splide__slide">
+                        <article class="client-opinion">
+                            <img src="img/quote_vector.svg" alt="ikona cytatu" loading="lazy" width="36px" height="26px">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Id velit eget tempus donec blandit rutrum habitasses. 
+                                Nibh donec mollis cursus nunc. Tortor, velit, magna nec porttitor. Ipsum commodo nunc, in quam risus, loremu condimentum adipiscing diam etiam.</p>
+                            <div class="opinion-author">
+                                <p>Marek Wysocki</p>
+                                <p>Manager</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="splide__slide">
+                        <article class="client-opinion">
+                            <img src="img/quote_vector.svg" alt="ikona cytatu" loading="lazy" width="36px" height="26px">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Id velit eget tempus donec blandit rutrum habitasses. 
+                                Nibh donec mollis cursus nunc. Tortor, velit, magna nec porttitor. Ipsum commodo nunc, in quam risus, loremu condimentum adipiscing diam etiam.</p>
+                            <div class="opinion-author">
+                                <p>Marek Wysocki</p>
+                                <p>Manager</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="splide__slide">
+                        <article class="client-opinion">
+                            <img src="img/quote_vector.svg" alt="ikona cytatu" loading="lazy" width="36px" height="26px">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Id velit eget tempus donec blandit rutrum habitasses. 
+                                Nibh donec mollis cursus nunc. Tortor, velit, magna nec porttitor. Ipsum commodo nunc, in quam risus, loremu condimentum adipiscing diam etiam.</p>
+                            <div class="opinion-author">
+                                <p>Filip Tyński</p>
+                                <p>Pracownik fizyczny</p>
+                            </div>
+                        </article>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="app-form" class="app-form-section">
+        <div class="main-container">
+            <div class="app-form-title">
+                <h3>Formularz pożyczkowy</h3>
+                <h1>Złóż wniosek o pożyczkę</h1>
+            </div>
+            <div class="app-form-items-container">
+                <div class="form-photo">
+                    <img class="image-responsive" src="img/app-form-photo.png" alt="zdjęcie mężczyzny" loading="lazy" width="1220px" height="1352px">
+                    <img class="form-mobile image-responsive" src="img/form-application-photo-mobile.png" alt="zdjęcie mężczyzny" loading="lazy" width="688px" height="440px">
+                    <div class="mobile-form-rectangle"></div>
+                </div>
+                <div class="form-container">
+                    <form novalidate action="">
+                        <input type="text" name="select-application" value="Wniosek o pożyczkę pod zastaw nieruchomości" style="display: none;">
+                        <div class="select-application">
+                            <p id="selected-text">Wniosek o pożyczkę pod zastaw nieruchomości</p> 
+                            <img class="arrows" src="img/arrow_down_menu.svg" alt="">
+                            <ul class="select-application-list">
+                                <li class="item-dropdown-form hidden-item">Wniosek o pożyczkę pod zastaw nieruchomości</li>
+                                <li class="item-dropdown-form">Pożyczka pod zastaw mieszkania</li>
+                                <li class="item-dropdown-form">Pożyczka pod pod zastaw domu</li>
+                                <li class="item-dropdown-form">Pożyczka pod pod zastaw lokalu usługowego</li>
+                                <li class="item-dropdown-form">Pożyczka pod pod zastaw ziemi budowlanej</li>
+                                <li class="item-dropdown-form">Pożyczka pomostową i inwestycyjną</li>
+                            </ul>
+                        </div>
+                        <div class="form-name-surname">
+                            <input type="text" name="name-surname" class="name-surname" required minlength="3">
+                            <label for="name-surname" class="label-inputs">Imię i nazwisko</label>
+                            <p class="required-error name-error">Musisz podać Imię</p>
+                            <p class="succes-valid"><img src="img/check-vector.svg" alt="znak wyboru" loading="lazy"></p>
+                        </div>
+                        <div class="form-email">
+                            <input type="text" name="email" class="email" required>
+                            <label for="email" class="label-inputs">Adres e-mail</label>
+                            <p class="required-error email-error">Musisz podać mail</p>
+                            <p class="succes-valid"><img src="img/check-vector.svg" alt="znak wyboru" loading="lazy"></p>
+                        </div>
+                        <div class="form-phone">
+                            <input type="tel" name="phone" class="phone" required pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+                            <label for="phone" class="label-inputs">Telefon komórkowy</label>
+                            <p class="required-error phone-error">Musisz podać numer telefonu</p>
+                            <p class="succes-valid"><img src="img/check-vector.svg" alt="znak wyboru" loading="lazy"></p>
+                        </div>
+                        <div class="form-content">
+                            <textarea name="content" id="content" required minlength="10"></textarea>
+                            <label for="content" class="label-textarea">Treść</label>
+                            <p class="required-error textarea-error">Musisz wypełnić pole treścią</p>
+                            <p class="succes-valid"><img src="img/check-vector.svg" alt="znak wyboru" loading="lazy"></p>
+                        </div>
+                        <p class="form-info-required">Wszystkie pola w formularzu są obowiązkowe</p>
+                        <div class="form-privacy-policy">
+                            <p class="required-error checkbox-error">Zaznacz wymagane pole</p>
+                            <input type="checkbox" name="privacy-policy" id="privacy-policy" class="privacy-policy"><span class="bg-checkbox"></span>
+                            <label for="privacy-policy">Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w tym formularzu, a także Akceptuję Politykę prywatności.</label>
+                        </div>
+                        <div class="form-button-container">
+                            <button class="btn" type="submit">Złóż wniosek o pożyczkę</button>
+                            <a href="tel:534923173" class="btn">Zadzwoń do nas <img src="img/arrow_right_home.svg" alt="strzałka w prawo" loading="lazy" width="16px" height="16px"></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="app-form-rectangle"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="main-container">
+        <div class="footer-elipse"><a href="#"><div class="elipse"></div><span class="footer-arrow"></span></a></div>
+        <div class="footer-items-container">
+            <div class="contact">
+                <img src="img/logo-ft-fund.png" alt="logo ft fund" loading="lazy" width="131px" height="62px">
+                <a href="tel:534923173">tel: <span>534 923 173</span></a>
+                <a href="tel:534923173">fax: <span>534 923 173</span></a>
+                <a href="" class="mobile-footer"><span>biuro@ftfund.pl</span></a>
+            </div>
+            <div class="guide">
+                <h2>Poradnik pożyczkobiorcy</h2>
+                <ul>
+                    <li><a href="">Pozabankowe pożyczki ratalne - kiedy warto?</a></li>
+                    <li><a href="">Na czym polega leasing nieruchomości?</a></li>
+                    <li><a href="">Pożyczki prywatne - jak to działa?</a></li>
+                    <li><a href="">Pożyczka pozabankowa - czy dostanie każdy?</a></li>
+                </ul>
+            </div>
+            <div class="loans-footer">
+                <h2>Pożyczki</h2>
+                <ul>
+                    <li><a href="">Pożyczka pod zastaw lokalu usługowego</a></li>
+                    <li><a href="">Pożyczka pod zastaw domu</a></li>
+                    <li><a href="">Pożyczka pod zastaw mieszkania</a></li>
+                    <li><a href="">Pożyczka pomostowa</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h2>Kategorie</h2>
+                <ul>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pożyczki pod zastaw</a></li>
+                    <li><a href="">Pożyczki prywatne</a></li>
+                </ul>
+            </div>
+            <div class="footer-email">
+                <h2>Napisz do nas</h2>
+                <a href="mailto:biuro@ftfund.pl">biuro@ftfund.pl</a>
+            </div>
+        </div>
+        <div class="social-icons-mobile">
+            <a href=""><img src="img/facebook-icon.svg" alt="ikona facebook" loading="lazy" width="40px" height="40px"></a>
+            <a href=""><img src="img/likedin-icon.svg" alt="ikona likedin" loading="lazy" width="40px" height="40px"></a>
+            <a href=""><img src="img/instagram-icon.svg" alt="ikona instagram" loading="lazy" width="40px" height="40px"></a>
+        </div>
+        <div class="footer-border"></div>
+        <div class="footer-info-container">
+            <div class="copyright">
+                <p>© FTFUND  2022 - All rights reserved. </p>
+                <a href="">Polityka prywatności</a>
+            </div>
+            <div class="social-icons">
+                <a href=""><img src="img/facebook-icon.svg" alt="ikona facebook" loading="lazy" width="40px" height="40px"></a>
+                <a href=""><img src="img/likedin-icon.svg" alt="ikona likedin" loading="lazy" width="40px" height="40px"></a>
+                <a href=""><img src="img/instagram-icon.svg" alt="ikona instagram" loading="lazy" width="40px" height="40px"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
