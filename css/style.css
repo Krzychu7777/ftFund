@@ -2619,6 +2619,7 @@ footer {
 
 .pagination-blog-post p:nth-child(3) {
     margin-left: 21px;
+    font-weight: 500;
 }
 
 .pagination-blog-post a:first-child {
