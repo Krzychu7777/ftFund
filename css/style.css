@@ -168,6 +168,12 @@ header {
     background-color: #E5EBF3;
     width: auto;
 }
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #D1DFF3;
+}
+
 @media screen and (max-width: 1450px) {
     .main-container {
         width: 95%;
@@ -183,6 +189,10 @@ header {
     header {
         height: 80px;
         background: #3E79D1;
+    }
+    .menu-items-list li  a {
+        text-decoration: none;
+        color: white;
     }
     .menu-dropdown-top--active {
         display: none;
@@ -656,20 +666,15 @@ header {
 }
 
 .square_image {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     background-color: white;
-    margin-bottom: 9%;
+    margin-bottom: 30px;
     transition: 0.3s ease-in-out;
-}
-
-.square_image img {
-    position: absolute;
-    top: 49%;
-    left: 49%;
-    transform: translate(-50%, -50%);
 }
 
 .square-items-container button {
@@ -704,6 +709,7 @@ header {
 }
 
 .square-items-container h2 {
+    margin-top: 0 !important;
     width: 80%;
     margin-bottom: 9%;
     transition: 0.2s ease-in-out;
@@ -718,12 +724,11 @@ header {
 }
 
 .square-box:hover .square_image {
-    width: 94px;
-    height: 94px;
+    transform: scale(1.1);
 }
 
 .square-box:hover .square-items-container {
-    bottom: 14%;
+    transform: translateY(-5%);
 }
 
 .square-box:hover .square-items-container button span {
@@ -736,7 +741,7 @@ header {
 }
 
 .square-items-container button:hover {
-    color: #003F9E;
+    opacity: 0.7;
 }
 
 .loans-title h3{
@@ -1514,6 +1519,7 @@ header {
     flex-direction: row;
     justify-content: center;
     margin-top: 7%;
+    margin-left: 0;
 }
 .overline-circle-item img {
     position: absolute;
@@ -2318,11 +2324,11 @@ footer {
     margin-top: 0;
 }
 
-.footer-email h2 , footer a{
+.footer-item:nth-child(5) h2 , footer a{
     text-align: right;
 }
 
-.footer-email a{
+.footer-item:nth-child(5) a{
     color: white;
     font-size: 1.4rem;
     line-height: 34px;
@@ -2364,8 +2370,24 @@ footer {
     display: none;
 }
 
+.social-icons a:nth-child(2) img, .social-icons a:nth-child(3) img {
+    margin-left: 10px;
+}
+
 .social-icons-mobile {
     display: none;
+}
+
+.footer-item a:hover {
+    color: white;
+}
+
+.contact a:hover {
+    color: white;
+}
+
+.social-item:hover {
+    opacity: 0.7;
 }
 
 @media screen and (max-width: 1230px) {
@@ -2377,15 +2399,15 @@ footer {
     .contact {
         align-items: flex-start;
     }
-    .footer-email h2, .footer-email a{
-        margin-top: 7%;
-        grid-column-start: 3;
-        text-align: start;
+    
+    .footer-item:nth-child(5), .footer-item:nth-child(4) {
+        margin-top: 15px;
     }
-    .category {
-        margin-top: 7%;
-        grid-column-start: 2;
+
+    .footer-item:nth-child(5) a{
+        float: right;
     }
+
     .footer-border {
         margin-top: 4%;
     }
@@ -2404,7 +2426,7 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 
-    .footer-email {
+    .footer-item:nth-child(5) {
         display: none;
     }
     .mobile-footer {
@@ -2423,9 +2445,6 @@ footer {
 }
 
 @media screen and (max-width: 690px) {
-    .category {
-        text-align: right;
-    }
     .footer-border {
         margin-top: -7%;
     }
@@ -2437,8 +2456,8 @@ footer {
         margin-bottom: 10%;
         margin-top: -10%;
     }
-    .social-icons-mobile img {
-        margin-left: 6px;
+    .social-icons-mobile a:nth-child(2) img,  .social-icons-mobile a:nth-child(3) img{
+        margin-left: 10px;
     }
 }
 
@@ -2450,9 +2469,11 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    .category {
-        text-align: left;
+
+    .footer-item:nth-child(4), .footer-item:nth-child(3) {
+        margin-top: 0;
     }
+
     .footer-border {
         margin-top: 0;
     }
@@ -2600,15 +2621,17 @@ footer {
 /*Blog and Posts*/
 
 .pagination-blog-post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 2%;
     color: #323F58;
     cursor: default;
     font-size: 1rem;
     line-height: 30px;
-}
-
-.pagination-blog-post p, .pagination-blog-post svg {
-    display: inline-block;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    overflow: hidden;
 }
 
 .pagination-blog-post svg {
@@ -2641,6 +2664,7 @@ footer {
 @media screen and (max-width: 980px) {
     .pagination-blog-post {
         margin-top: 4%;
+        overflow: auto;
     }
 }
 
@@ -2708,4 +2732,8 @@ footer {
     100% {
         transform: scale(1);
     }
+}
+
+.second-items-menu a:hover, .item-desktop span:hover {
+    opacity: 0.7;
 }

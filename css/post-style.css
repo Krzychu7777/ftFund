@@ -157,10 +157,6 @@
         font-size: 1.7rem;
         line-height: 42px;
     }
-    .pagination-blog-post p:last-child {
-        display: block;
-        margin: 0 !important;
-    }
     .text-section h2 {
         margin-top: 10%;
         width: 90%;

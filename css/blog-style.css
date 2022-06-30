@@ -36,6 +36,7 @@
 }
 
 .blog-item {
+    overflow: hidden;
     max-width: 455px;
     font-weight: 600;
     color: #0E1F40;
@@ -52,16 +53,33 @@
 .blog-item h4 {
     font-size: 1.3rem;
     line-height: 34px;
+    transition: 0.3s ease-in-out;
 }
 
 .blog-item p {
     font-weight: 400;
     font-size: 1rem;
     line-height: 30px;
+    transition: 0.3s ease-in-out;
 }
 
-.blog-item img {
+.blog-item-image{
+    max-width: 455px;
+    max-height: 317px;
     border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-item-image img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.blog-item:hover img{
+    transform: scale(1.1);
+}
+
+.blog-item:hover h4, .blog-item:hover p {
+    color: #004BBC;
 }
 
 .rectangle-blog-container {
