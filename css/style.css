@@ -637,6 +637,7 @@ header {
     padding: 0 0 1%;
     position: relative;
 }
+
 .square-box {
     position: relative;
     max-width: 450px;
@@ -647,6 +648,11 @@ header {
     transition: 0.3s ease-in-out;
     width: 100%;
     margin-bottom: 2%;
+}
+
+.square-box a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .square_image {
