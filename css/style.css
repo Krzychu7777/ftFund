@@ -2041,6 +2041,10 @@ header {
     width: 250px;
 }
 
+.form-button-container button:disabled {
+    opacity: 0.3;
+}
+
 .form-button-container a {
     display: flex;
     flex-direction: row;
