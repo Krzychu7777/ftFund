@@ -102,18 +102,22 @@ homeDots.forEach((item) => {
 var splide = new Splide( '#opinions', {
     perPage: 3,
     pagination: false,
-    gap: "-5rem",
+    gap: "-6rem",
     speed: 800,
     perMove: 1,
     breakpoints: {
         1770: {
-            gap: "0rem",
+            gap: "-6rem",
         },
         1400: {
-            gap: "5rem", 
+            gap: "-6rem", 
         },
         1124: {
             perPage: 2,
+            gap: "-11rem" 
+        },
+        770: {
+            gap: "-7rem" 
         },
         700: {
             perPage: 1,

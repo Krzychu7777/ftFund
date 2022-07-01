@@ -863,7 +863,7 @@ header {
 }
 
 .about-section {
-    min-height: 100vh;
+    min-height: 82vh;
     margin: 0;
     padding: 5% 0 5%;
 }
@@ -991,6 +991,12 @@ header {
 .about-button-container button:nth-child(2):active {
     background-color: #F0F4F9;
     color: #004BBC;
+}
+
+@media screen and (max-width: 1920px) {
+    .about-section {
+        padding: 5% 0 7%;
+    }
 }
 
 @media screen and (max-width: 1630px) {
@@ -1325,7 +1331,7 @@ header {
     }
 }
 .conditions-section {
-    min-height: 100vh;
+    min-height: 64vh;
     margin: 0;
     background-color: white;
     padding: 5% 0 5%;
@@ -1483,7 +1489,7 @@ header {
 }
 
 .overline-section {
-    min-height: 64vh;
+    min-height: 52vh;
     margin: 0;
     padding: 5% 0 5%;
     overflow: hidden;
@@ -1590,7 +1596,6 @@ header {
     }
     .overline-circle-item {
         margin-top: 3%;
-        margin-left: -20%;
         width: 300px;
         height: 300px;
     }
@@ -1618,10 +1623,11 @@ header {
 }
 
 .opinions-section {
-    min-height: 64vh;
+    min-height: 52vh;
     margin: 0;
     background-color: #F0F4F9;
     padding: 5% 0 5%;
+    overflow: hidden;
 }
 .opinions-container {
     margin-left: 244px;
@@ -1709,6 +1715,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 4%;
+    width: 150%;
 }
 
 .client-opinion {
@@ -1779,7 +1786,7 @@ header {
 }
 
 .app-form-section {
-    min-height: 100vh;
+    min-height: 87vh;
     position: relative;
     margin: 0;
     padding: 5% 0 5%;
@@ -2118,6 +2125,12 @@ header {
 
 .succes-valid--active {
     opacity: 1;
+}
+
+@media screen and (max-width: 1920px) {
+    .app-form-section {
+        padding: 5% 0 10%;
+    }
 }
 
 @media screen and (max-width: 1330px) {
